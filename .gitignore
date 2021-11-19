@@ -70449,3 +70449,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 >>>>>>> 303e5742a1e3bb9938cc87c65d25a20e9abe4591
+#Serverless directories
+.serverless
+
+#environment variables
+config.json
