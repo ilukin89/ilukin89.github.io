@@ -129,10 +129,10 @@ const oAuth2Client = new google.auth.OAuth2(
         
         .then((results) => {
           return {
-            headers: {
-              'Access-Control-Allow-Origin': '*'
-            },
             statusCode: 200,
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+            },
             body: JSON.stringify({ events: results.data.items }),
           };
         })
