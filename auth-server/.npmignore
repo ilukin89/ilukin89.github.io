@@ -3,4 +3,8 @@ node_modules
 jspm_packages
 
 # Serverless directories
+<<<<<<< HEAD
 .serverless
+=======
+.serverless
+>>>>>>> 65a8849ea8fd257b737516e1c170af38da4c074e
