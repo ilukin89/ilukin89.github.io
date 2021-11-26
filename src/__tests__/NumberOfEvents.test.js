@@ -9,7 +9,6 @@ describe('<NumberOfEvents unit testing', () => {
     beforeAll(() => {
         NumberOfEventsWrapper = shallow(<NumberOfEvents />);
     });
-
     test('render text input', () =>{
         expect(NumberOfEventsWrapper.find('.newValue')).toHaveLength(1);
     });
@@ -19,4 +18,12 @@ describe('<NumberOfEvents unit testing', () => {
         NumberOfEventsWrapper.find('.newValue').simulate('change', newValue);
         expect(NumberOfEventsWrapper.state('numberOfEvents')).toBe(10);
     });
+
+   
+   
+
+
 })
+
+
+

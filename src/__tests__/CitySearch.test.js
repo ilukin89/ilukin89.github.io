@@ -66,6 +66,11 @@ describe('<CitySearch /> component', () => {
     expect(CitySearchWrapper.state("query")).toBe(suggestions[0]);
   });
 
-  
+  test("show event suggestions", () => {
+    CitySearchWrapper.setState({
+    showSuggestions:true
+    });
+    expect(CitySearchWrapper.find(".suggestions")).toHaveLength(1);
+  });
 
 });

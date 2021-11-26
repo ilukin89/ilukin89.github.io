@@ -16,21 +16,24 @@ describe("<Event /> component", () => {
       collapsed: true,
     });
     expect(eventWrapper.find(".extra-details")).toHaveLength(0);
+    expect(eventWrapper.find(".show-details-btn")).toHaveLength(1);
   });
 
-  test("renders summary in the collapsed event element", () => {
+
+  
+  test("Summary is displayed", () => {
     expect(eventWrapper.find(".summary")).toHaveLength(1);
   });
 
-  test("renders date in the collapsed event element", () => {
+  test("Render date in the collapsed event element", () => {
     expect(eventWrapper.find(".start-date")).toHaveLength(1);
   });
 
-  test("renders location in the collapsed event element", () => {
+  test("Display location in the collapsed event element", () => {
     expect(eventWrapper.find(".location")).toHaveLength(1);
   });
 
-  test("renders a button to show details", () => {
+  test("Button to show details", () => {
     expect(eventWrapper.find(".show-details-btn")).toHaveLength(1);
   });
 });
