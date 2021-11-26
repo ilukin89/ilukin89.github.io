@@ -5,11 +5,11 @@ class Event extends Component {
     collapsed: true,
   };
 
-  // handleClick = () => {
-  //   this.setState({
-  //     collapsed: !this.state.collapsed,
-  //   });
-  // };
+  handleClick = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  };
 
   render() {
     const { event } = this.props;
@@ -31,19 +31,13 @@ class Event extends Component {
         >
           {collapsed ? "Show Details" : "Hide Details"}
         </button>
-        {!collapsed &&
-          <div
-            className={`extra-details ${this.state.collapsed ? "hide" : "show"}`}
-            >
-          
+        {!collapsed && <div className={`extra-details show`}>
               <a href={event.htmlLink}>
                 See details on Google Calendar
               </a>
               <p className="event-description">{event.description}</p>
             </div>
           }
-
-
     </div>;
   }
 }

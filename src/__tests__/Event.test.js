@@ -19,7 +19,6 @@ describe("<Event /> component", () => {
     expect(eventWrapper.find(".show-details-btn")).toHaveLength(1);
   });
 
-
   
   test("Summary is displayed", () => {
     expect(eventWrapper.find(".summary")).toHaveLength(1);
@@ -36,4 +35,14 @@ describe("<Event /> component", () => {
   test("Button to show details", () => {
     expect(eventWrapper.find(".show-details-btn")).toHaveLength(1);
   });
+
+  test("Button to hide details", () => {
+    expect(eventWrapper.find(".hide-details-btn")).toHaveLength(0);
+  
+  });
+  test('clicking Show Details button changes collapse state', () => {
+    eventWrapper.find('.show-details-btn').simulate('click');
+    expect(eventWrapper.state('collapsed')).toBe(false);
+  })
 });
+
