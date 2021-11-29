@@ -28,7 +28,7 @@ class NumberOfEvents extends Component {
         <p>Change number of shown events between 1-10</p>
         
         <input type="number" value={this.state.numberOfEvents} className="newValue" onChange={(e) => this.handleInputChanged(e)} />
-        <alert text={this.state.infoText} />
+        {/* <alert text={this.state.infoText} /> */}
       </div>
     );
   }
