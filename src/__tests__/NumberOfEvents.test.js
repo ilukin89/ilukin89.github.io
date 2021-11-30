@@ -18,16 +18,12 @@ describe('<NumberOfEvents unit testing', () => {
         NumberOfEventsWrapper.find('.newValue').simulate('change', newValue);
         expect(NumberOfEventsWrapper.state('numberOfEvents')).toBe(10);
     });
-    
-    test('infoText state changes correctly when number is not 1-10', () =>{    
-      const newValue = { target: { value: 11 }};    
+
+    test('infoText state changes correctly when number is not 1-32', () =>{    
+      const newValue = { target: { value: 33 }};    
       NumberOfEventsWrapper.find('.newValue').simulate('change', newValue);    
-      expect(NumberOfEventsWrapper.state('infoText')).toBe('Choose number between 1 and 10');      
+      expect(NumberOfEventsWrapper.state('infoText')).toBe('Choose number between 1 and 32');      
      });
-   
-   
-
-
 })
 
 

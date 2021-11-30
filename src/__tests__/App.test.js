@@ -73,3 +73,11 @@ test('get list of all events when user selects "See all cities"', async () => {
   expect(AppWrapper.state('events')).toEqual(allEvents);
   AppWrapper.unmount();
 });
+
+test('App passes "numberOfEvents" state as a prop to NumberOfEvents', () => {
+  const AppWrapper = mount(<App />);
+  const AppNumberOfEventsState = AppWrapper.state('numberOfEvents');
+  expect(AppNumberOfEventsState).not.toEqual(undefined);
+  expect(AppWrapper.find(NumberOfEvents).props().numberOfEvents).toEqual(32);
+  AppWrapper.unmount();
+});
