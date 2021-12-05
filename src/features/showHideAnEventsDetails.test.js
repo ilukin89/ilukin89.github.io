@@ -10,17 +10,18 @@ const feature = loadFeature('./src/features/showHideAnEventsDetails.feature');
 defineFeature(feature, test => {
 
   test('An event element is collapsed by default', ({ given, when, then }) => {
-    
+
     let EventListWrapper;
     given('the user has searched for events by city', () => {
       EventListWrapper = shallow(<EventList events={mockData} />);
 
     });
 
-  
+
     when('user has list of suggested events', () => {
       EventListWrapper = shallow(<EventList events={mockData} />);
       expect(EventListWrapper.find('.EventList')).toHaveLength(1);
+
     });
 
     let EventWrapper;
@@ -32,7 +33,7 @@ defineFeature(feature, test => {
   });
 
   test('User can expand an event to see its details', ({ given, when, then }) => {
-    
+
     let EventWrapper;
     given('the user had list of suggested events', () => {
       EventWrapper = shallow(<Event event={mockData[0]} />);
@@ -54,7 +55,7 @@ defineFeature(feature, test => {
   });
 
   test('User can collapse an event to hide its details', ({ given, when, then }) => {
-    
+
     let EventWrapper;
     given('the user has an expanded event details', async () => {
       EventWrapper = shallow(<Event event={mockData[0]} />);
