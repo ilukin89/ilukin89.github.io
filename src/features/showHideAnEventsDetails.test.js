@@ -41,8 +41,9 @@ defineFeature(feature, test => {
     });
 
     when('user clicks Show Details button for a given event element', () => {
-      const showDetails = EventWrapper.find(".show-details");
-      showDetails.simulate("click");
+      const showDetails = EventWrapper.find(".show-extra-details");
+      // showDetails.simulate("click");
+      EventWrapper.find('.show-extra-details').simulate('click');
 
     });
 
