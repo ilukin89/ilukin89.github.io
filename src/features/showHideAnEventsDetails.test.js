@@ -41,9 +41,9 @@ defineFeature(feature, test => {
     });
 
     when('user clicks Show Details button for a given event element', () => {
-      const showDetails = EventWrapper.find(".show-extra-details");
+      // const showDetails = EventWrapper.find(".show-extra-details");
       // showDetails.simulate("click");
-      EventWrapper.find('.show-extra-details').simulate('click');
+      EventWrapper.find('.show-details-btn').simulate('click');
 
     });
 
@@ -53,7 +53,7 @@ defineFeature(feature, test => {
     });
   });
 
-  test('User can collapse an event to hide its details', ({ given, and, when, then }) => {
+  test('User can collapse an event to hide its details', ({ given, when, then }) => {
     
     let EventWrapper;
     given('the user has an expanded event details', async () => {
@@ -63,7 +63,7 @@ defineFeature(feature, test => {
     });
 
     when('user clicks Hide Details button for a given event element', () => {
-      EventWrapper.find(".hide-details").simulate("click");
+      EventWrapper.find(".hide-details-btn").simulate("click");
 
     });
 
