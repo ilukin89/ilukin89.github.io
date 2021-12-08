@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import {HashRouter} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import * as atatus from 'atatus-spa';
 
-ReactDOM.render( <HashRouter>
+
+ReactDOM.render(<HashRouter>
   <App />
-  </HashRouter>,
+</HashRouter>,
   document.getElementById('root')
 );
 
@@ -21,3 +23,4 @@ serviceWorkerRegistration.unregister();
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+atatus.config('b9f4e77f68894ba4b928e2a9e22f00f4').install();
