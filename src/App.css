@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.Alert {
+  position: relative;
+}
+
 ul {
   padding: 0;
   list-style: none;
