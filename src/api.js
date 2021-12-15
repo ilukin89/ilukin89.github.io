@@ -9,7 +9,7 @@ import NProgress from 'nprogress';
  * It will also remove all duplicates by creating another new array using the spread operator and spreading a Set.
  * The Set will remove all duplicates from the array.
  */
- export const extractLocations = (events) => {
+export const extractLocations = (events) => {
   var extractLocations = events.map((event) => event.location);
   var locations = [...new Set(extractLocations)];
   return locations;
@@ -27,12 +27,27 @@ const checkToken = async (accessToken) => {
 
 export const getEvents = async () => {
   NProgress.start();
+  let result = [];
+  let events = [];
 
   if (window.location.href.startsWith("http://localhost")) {
     NProgress.done();
     return mockData;
   }
+  // exercise code
 
+  if (result.data) {
+    var locations = extractLocations(result.data.events);
+    localStorage.setItem('lastEvents', JSON.stringify(result.data));
+    localStorage.setItem('locations', JSON.stringify(locations));
+  }
+
+  if (!navigator.onLine) {
+    const data = localStorage.getItem("lastEvents");
+    NProgress.done();
+    return data ? JSON.parse(events).events : [];;
+  }
+  // end
 
   const token = await getAccessToken();
   const removeQuery = () => {
@@ -77,9 +92,9 @@ export const getAccessToken = async () => {
         return res.json();
       })
       .catch((error) => error);
-  
+
     access_token && localStorage.setItem("access_token", access_token);
-  
+
     return access_token;
   };
 
