@@ -6,6 +6,7 @@ import NumberOfEvents from './NumberOfEvents';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
 import './nprogress.css';
 import WelcomeScreen from './WelcomeScreen';
+import { OfflineAlert } from './Alert';
 
 
 class App extends Component {
@@ -57,6 +58,15 @@ class App extends Component {
         }
       });
     }
+    if (!navigator.onLine) {
+      this.setState({
+        OfflineAlertText: 'You are not connected to the Internet'
+      });
+    } else {
+      this.setState({
+        OfflineAlertText: ''
+      });
+    }
     // getEvents().then((events) => {
     //   const { numberOfEvents } = this.state;
     //   if (this.mounted) {
@@ -76,11 +86,13 @@ class App extends Component {
   render() {
     if (this.state.showWelcomeScreen === undefined) return <div
       className="App" />
-    const { numberOfEvents, locations, events } = this.state;
+    const { numberOfEvents, locations, events, OfflineAlertText } = this.state;
     return (
       <div className="App">
+        <h1>Meet App</h1>
         <CitySearch locations={locations} updateEvents={this.updateEvents} />
         <EventList events={events} />
+        <OfflineAlert text={OfflineAlertText} />
         <NumberOfEvents updateNumberofEvents={this.updateNumberofEvents} numberOfEvents={numberOfEvents} />
         <WelcomeScreen showWelcomeScreen={this.state.showWelcomeScreen}
           getAccessToken={() => { getAccessToken() }} />

@@ -28,7 +28,7 @@ class InfoAlert extends Alert {
     this.color = 'blue';
   }
 }
-export { InfoAlert };
+
 
 
 class ErrorAlert extends Alert {
@@ -38,5 +38,15 @@ class ErrorAlert extends Alert {
   }
 }
 
-export { ErrorAlert };
+
+
+class OfflineAlert extends Alert {
+  constructor(props) {
+    super(props);
+    this.color = 'fc1303';
+  }
+
+}
+
+export { InfoAlert, ErrorAlert, OfflineAlert }
 
