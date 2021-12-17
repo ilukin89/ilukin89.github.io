@@ -109,7 +109,7 @@ class App extends Component {
     return (
 
       <div className="App">
-        <h1><svg class="link-svgline"><use xlink:href="#svg_line"></use></svg>Meet App</h1>
+        <h1>Meet App</h1>
         <CitySearch locations={locations} updateEvents={this.updateEvents} />
         <h4>Events in each city</h4>
         <div className="data-vis-wrapper">
