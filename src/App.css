@@ -207,10 +207,14 @@ button.show-details-btn:hover {
   
 }
 
-a, a:hover {
+a {
   text-decoration: none;
   color: #30475E;
   font-weight: bold;
+}
+
+a:hover {
+  color: #F05454;
 }
 
 button.hide-details-btn {
