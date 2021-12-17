@@ -193,12 +193,14 @@ button.hide-details-btn {
   border: 1px solid #F05454;
   border-radius: 7px;
   font-size: 14px;
+  margin-bottom: 20px;
   
 }
 
-/* button.hide-details-btn:hover {
-  text-transform: lowercase;
-} */
+button.hide-details-btn:hover {
+  font-style: bold;
+  border: 1px dashed #F05454;
+}
 
 p.start-date {
   font-style: italic;
