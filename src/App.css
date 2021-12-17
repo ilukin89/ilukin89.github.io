@@ -109,9 +109,11 @@ input[type="number"] {
   padding: 10px 30px 30px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #30475E;
+  border: 1px dotted #30475E;
   border-radius: 20px;
   position: relative;
+  background-image: linear-gradient(90deg, transparent 79px, transparent 81px),
+  linear-gradient(#efefef .1em, transparent .1em);
 }
 
 p.location {
