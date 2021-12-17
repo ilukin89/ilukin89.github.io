@@ -168,6 +168,22 @@ button.show-details-btn {
   background-color: #F05454;
   border: none;
   border-radius: 7px;
+  font-size: 14px;
+}
+
+button.show-details-btn:hover {
+  text-transform: uppercase;
+  background-color: #F5F5F5;
+  color: #F05454;
+  border: 7px #F05454;
+  font-size: 14px;
+  padding: 0.8rem;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #30475E;
+  font-weight: bold;
 }
 
 button.hide-details-btn {
@@ -177,6 +193,7 @@ button.hide-details-btn {
   color: #121212;
   border: none;
   border-radius: 7px;
+  
 }
 
 .Alert {
