@@ -172,12 +172,9 @@ button.show-details-btn {
 }
 
 button.show-details-btn:hover {
-  text-transform: uppercase;
-  background-color: #F5F5F5;
-  color: #F05454;
-  border: 7px #F05454;
-  font-size: 14px;
-  padding: 0.8rem;
+  
+  background-color: #ec6868;
+  
 }
 
 a, a:hover {
@@ -188,12 +185,19 @@ a, a:hover {
 
 button.hide-details-btn {
   padding: 0.8rem;
+  text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif;
   background-color: #f5f5f5;
-  color: #121212;
-  border: none;
+  color: #F05454;
+  border: 7px #F05454;
+  text-decoration: overline;
   border-radius: 7px;
+  font-size: 14px;
   
+}
+
+p.start-date {
+  font-style: italic;
 }
 
 .Alert {
