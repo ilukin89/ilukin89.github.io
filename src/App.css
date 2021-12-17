@@ -112,8 +112,10 @@ input[type="number"] {
   border: 1px dotted #30475E;
   border-radius: 20px;
   position: relative;
+  background-color: #fff;
   background-image: linear-gradient(90deg, transparent 79px, transparent 81px),
   linear-gradient(#efefef .1em, transparent .1em);
+  background-size: 100% 1.2em;
 }
 
 p.location {
