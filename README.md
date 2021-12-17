@@ -1,7 +1,10 @@
 <h1>Meet App</h1>
 
 Live version: <a href ="https://ilukin89.github.io/meet_app/">https://ilukin89.github.io/meet_app/</a> <br>
-<a href="https://ibb.co/4jWLXHc"><img src="https://i.ibb.co/vJ1WTSb/Slika-zaslona-2021-12-17-u-19-18-17.png" alt="Slika-zaslona-2021-12-17-u-19-18-17" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image ru</a><br />
+
+<br>
+
+<a href="https://ibb.co/4jWLXHc"><img src="https://i.ibb.co/vJ1WTSb/Slika-zaslona-2021-12-17-u-19-18-17.png" alt="Slika-zaslona-2021-12-17-u-19-18-17" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 <br>
 
 This is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events. 
@@ -93,21 +96,21 @@ GIVEN: user is viewing event details
 WHEN: user clicks on the chart
 THEN: user can see a chart representing upcoming events in the city
 
-<h2>Technical Requirements </h2>
+<h2>Technical Requirements </h2><br><br>
 
-● The app must be a React application.
-● The app must be built using the TDD technique.
-● The app must use the Google Calendar API and OAuth2 authentication flow.
-● The app must use serverless functions (AWS lambda is preferred) for the authorization server instead of using a traditional server.
-● The app’s code must be hosted in a Git repository on GitHub.
-● The app must work on the latest versions of Chrome, Firefox, Safari, Edge, and Opera, as well as on IE11.
-● The app must display well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.
-● The app must pass Lighthouse’s PWA checklist.
-● The app must work offline or in slow network conditions with the help of a service worker.
-● Users may be able to install the app on desktop and add the app to their home screen on mobile.
-● The app must be deployed on GitHub Pages.
-● The API call must use React axios and async/await.
-● The app must implement an alert system using an OOP approach to show information to the user.
-● The app must make use of data visualization (recharts preferred).
-● The app must be covered by tests with a coverage rate >= 90%.
-● The app must be monitored using an online monitoring tool.
+● The app must be a React application. <br>
+● The app must be built using the TDD technique.<br>
+● The app must use the Google Calendar API and OAuth2 authentication flow.<br>
+● The app must use serverless functions (AWS lambda is preferred) for the authorization server instead of using a traditional server.<br>
+● The app’s code must be hosted in a Git repository on GitHub.<br>
+● The app must work on the latest versions of Chrome, Firefox, Safari, Edge, and Opera, as well as on IE11.<br>
+● The app must display well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.<br>
+● The app must pass Lighthouse’s PWA checklist.<br>
+● The app must work offline or in slow network conditions with the help of a service worker.<br>
+● Users may be able to install the app on desktop and add the app to their home screen on mobile.<br>
+● The app must be deployed on GitHub Pages.<br>
+● The API call must use React axios and async/await.<br>
+● The app must implement an alert system using an OOP approach to show information to the user.<br>
+● The app must make use of data visualization (recharts preferred).<br>
+● The app must be covered by tests with a coverage rate >= 90%.<br>
+● The app must be monitored using an online monitoring tool.<br>
