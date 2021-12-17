@@ -163,10 +163,12 @@ p.location {
 
 button.show-details-btn {
   padding: 0.8rem;
+  text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif;
   color: #f5f5f5;
   background-color: #F05454;
-  border: none;
+  border: 7px #F05454;
+  text-decoration: overline;
   border-radius: 7px;
   font-size: 14px;
 }
