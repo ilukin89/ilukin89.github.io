@@ -109,7 +109,8 @@ input[type="number"] {
   padding: 10px 30px 30px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px dotted #30475E;
+  /* border: 1px dotted #30475E; */
+  border: none;
   border-radius: 20px;
   position: relative;
   background-color: #fff;
