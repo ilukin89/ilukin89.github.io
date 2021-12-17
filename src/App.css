@@ -196,9 +196,9 @@ button.hide-details-btn {
   
 }
 
-button.hide-details-btn:hover {
+/* button.hide-details-btn:hover {
   text-transform: lowercase;
-}
+} */
 
 p.start-date {
   font-style: italic;
