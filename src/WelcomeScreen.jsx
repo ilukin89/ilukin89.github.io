@@ -24,7 +24,7 @@ o.svg"
               rel="nofollow noopener"
               class="btn-text"
             >
-              <b>Sign in with google</b>
+              <b>Sign in with Google</b>
             </button>
           </div>
         </div>

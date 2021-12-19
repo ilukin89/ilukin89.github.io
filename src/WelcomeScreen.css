@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background: white;
+  background: #e1e1e1;
 }
 .login-button {
   color: #494949;
@@ -52,9 +52,9 @@
   color: #fff;
   font-size: 14px;
   letter-spacing: 0.2px;
-  font-family: "Roboto";
   background-color: #4285f4;
-  width: 80%;
-  height: 100%;
+  /* width: 80%; */
+  /* height: 100%; */
   text-align: center;
+  border: none;
 }
