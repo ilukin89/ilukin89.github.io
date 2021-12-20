@@ -50,7 +50,7 @@ input.city {
 
 .App {
   text-align: center;
-  padding: 2% 5%;
+  /* padding: 2% 5%; */
 }
 
 .App * {
@@ -132,6 +132,8 @@ input[type="number"] {
 .event {
   padding: 10px 30px 30px;
   margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: left;
   /* border: 1px dotted #30475E; */
   border: none;
@@ -255,6 +257,8 @@ p.start-date {
 }
 .recharts-surface {
   overflow: visible;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .login-button {
