@@ -2,6 +2,11 @@
 
 Live version: <a href ="https://ilukin89.github.io/meet_app/">https://ilukin89.github.io/meet_app/</a> <br>
 
+<b>Credits:</b><br>
+marker effect - Wojtek Witkowski<br>
+Google fonts<br>
+notebook paper effect - Coderwall<br>
+
 <br>
 
 <a href="https://ibb.co/4jWLXHc"><img src="https://i.ibb.co/vJ1WTSb/Slika-zaslona-2021-12-17-u-19-18-17.png" alt="Slika-zaslona-2021-12-17-u-19-18-17" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
